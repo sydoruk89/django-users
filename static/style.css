@@ -1,0 +1,46 @@
+html, body{
+    height: 100%;
+    color: rgb(85, 85, 85) !important;
+}
+.bg{
+    background-color: #f4f4f4;
+}
+main{
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+}
+.form-login {
+    width: 100%;
+    max-width: 380px;
+    padding: 25px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.btn-pad {
+    padding: 0.6rem !important;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    width: 5rem;
+    background-image: linear-gradient(to bottom, #25cbe4 , #118a9d);
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-color: rgb(167, 167, 167);
+    border-radius: 5px;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn:hover{
+    background:#6be4f7;
+}
+.errorlist{
+    color:red !important;
+    list-style-type: none; 
+}

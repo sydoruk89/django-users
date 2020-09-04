@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  <h2>Hi {{ user.username }}! </h2>
+  <p><a class="btn btn-sm btn-info btn-pad" href="{% url 'account_logout' %}">LOGOUT</a></p>
+{% else %}
+  <h2>You are not logged in</h2>
+  <a class="btn btn-sm btn-info btn-pad" href="{% url 'account_login' %}">LOGIN</a>
+  <a class="btn btn-sm btn-info btn-pad" href="{% url 'account_signup' %}">SIGNUP</a>
+{% endif %}
+{% endblock %}
