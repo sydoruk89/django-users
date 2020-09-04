@@ -12,3 +12,9 @@ class MyTest(TestCase):
         )
     def test_user(self):
         self.assertEqual(self.user.email, 'testuser@test.pl')
+        with self.assertRaises(TypeError):
+            get_user_model().objects.create_user()
+        with self.assertRaises(TypeError):
+            get_user_model().objects.create_user(email='')
+        with self.assertRaises(ValueError):
+            get_user_model().objects.create_user(email='', username='',password="foo")
